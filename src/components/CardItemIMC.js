@@ -2,7 +2,7 @@ import React from 'react';
 
 
 function CardItemIMC(props) {
-    var style,status;
+    var style="cards__item301",status;
     if (props.IMC <= 18.49 && props.IMC <= 16) {
         style = "cards__item3"
         status= "Peso bajo"
@@ -33,11 +33,11 @@ function CardItemIMC(props) {
         <>
         
          <li className={style}>
-                <p className='cards__item__link2'>
+                <p className='cards__item__link2' align="center">
                     
-                    <div className='cards__item__infoI'>
+                    <div className='cards__item__infoI' >
                     
-                    <div align="center">
+                    <div >
                         <h3 className = 'h3'>Su {props.title} es:</h3>
                         <div className ="side">
                         <p className=''>{props.IMC}</p>

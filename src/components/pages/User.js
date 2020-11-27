@@ -63,14 +63,15 @@ const User = () => {
                     <button className='btn--primary fadeInDown' onClick={ObtUserStats}>Obtener Tu resultado personal</button>
                     <section>
                         <h2 className='h2'>Estado Actual</h2>
-                        <div className="class">
-                            <ul className="class">
+                        <div className="cards__wrapper1">
+                            <ul className="card__items">
                                 <CardItemIMC
                                 title='IMC'
                                 IMC={userStats.IMC}
                                 estado={userStats.Clasificacion}
                                 peso={user.peso}
                                 />
+                                
                             </ul>
                         </div>
                         <img src='https://cdn.discordapp.com/attachments/710593688392171612/781782233530761236/states.png' alt='Travel Image' className='imagecontet'></img>
